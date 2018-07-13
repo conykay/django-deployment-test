@@ -1,0 +1,12 @@
+{% extends 'basicapp/base.html' %}
+  {% block body_block %}
+
+  <div class="jumbotron">
+
+    {% if userdict %}
+    <h1>welcome to your profile {{ userdict.picture }} </h1>
+    {% endif %}
+
+  </div>
+
+  {% endblock %}

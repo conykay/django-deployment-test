@@ -1,0 +1,26 @@
+{% extends 'basicapp/base.html' %}
+{% load staticfiles %}
+  {% block body_block%}
+
+    {% if registered %}
+
+      <div class="jumbotron">
+
+        <h1> Thankyou for subscribing </h1>
+
+      </div>
+
+    {% else %}
+      <h1>Register here !</h1>
+      <form enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+
+        {{ register_form.as_p }}
+        {{ userinfo_form.as_p }}
+
+        <input type="submit" value="submit">
+      </form>
+
+    {% endif %}
+
+  {% endblock %}
