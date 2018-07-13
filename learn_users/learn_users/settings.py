@@ -28,7 +28,7 @@ SECRET_KEY = 'm4j3!^*oa6l*8o2s5%entglq*vbp6)57-p_9()g_v$+mjpy8&-'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    conelius.pythonanywhere.com,
+    'conelius.pythonanywhere.com',
 ]
 
 
